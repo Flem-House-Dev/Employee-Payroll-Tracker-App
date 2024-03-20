@@ -21,4 +21,4 @@ In the console, there will be logged another table with the same data. the avera
 
 Please refer to the LICENSE in the repo.
 
-![Page-screenshot]( "Page-screenshot")
+![Page-screenshot](./assests/images/employee-tracker-app.PNG "Page-screenshot")
