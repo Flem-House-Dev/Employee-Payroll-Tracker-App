@@ -7,20 +7,28 @@ const collectEmployees = function() {
 
   const employees = [];
 
-  while (confirm("Do you want to add another employee?")) {
+  const enterInfo = function()   {
   let firstName = prompt("Enter employee first name:");
   let lastName = prompt("Enter employee last name:");
   let salary = parseFloat(prompt("Enter employee salary:"));
   
+    if (firstName && lastName && !isNaN(salary)) { // Check for valid values
+      const employee = {
+        firstName: firstName,
+        lastName: lastName,
+        salary: salary
+      };
 
-  const employee = {
-    firstName: firstName,
-    lastName: lastName,
-    salary: salary
-  };
-
-  employees.push(employee);
+      // Push the employee object to the employees array
+      employees.push(employee);
+    } else {
+      alert("Please enter valid information for all fields.");
+    }
   }
+
+  enterInfo();
+  while (confirm("Do you want to add another employee?")) {enterInfo()};
+
   return employees;
 
 }
@@ -35,7 +43,9 @@ const displayAverageSalary = function(employeesArray) {
   }
 
   const averageSalary = totalSalary / employeesArray.length;
-  console.log(`The average employee salary between our ${employeesArray.length} employee(s) is ${averageSalary}`);
+  const averageSalaryUSD = averageSalary.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+  
+  console.log(`The average employee salary between our ${employeesArray.length} employee(s) is ${averageSalaryUSD}`);
 
 };
 
@@ -64,7 +74,7 @@ const displayEmployees = function(employeesArray) {
   const employeeTable = document.querySelector('#employee-table');
 
   // Clear the employee table
-  employeeTable.innerHTML = '';
+  // employeeTable.innerHTML = '';
 
   // Loop through the employee data and create a row for each employee
   for (let i = 0; i < employeesArray.length; i++) {
