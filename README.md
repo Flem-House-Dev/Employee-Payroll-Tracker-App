@@ -13,7 +13,7 @@ Visit [Employee Tracker App](https://jfleming963.github.io/Employee-Payroll-Trac
 
 Click the "Add Employees" button, and the user will be prompted to enter the employees first name, last name, and salary. If the user enters invalid data, they will be alerted to reenter the information. Upon entering the requested information, a table will be rendered in the browser containing the data.
 
-In the console, there will be logged another table with the same data. the average employee salary. Also, a random employee will be selected to win a drawing. The drawing winner will be displayed in the console. 
+In the console, there will be logged another table with the same data along with the average employee salary. Also, a random employee will be selected to win a drawing. The drawing winner will be displayed in the console. 
 
 ## Credits
 
