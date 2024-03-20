@@ -7,7 +7,7 @@ This helpful app will enable businesses to keep track of employee salaries in or
 ## Installation
 
 No installation is necessary. 
-Visit [Flem House Tech](https://jfleming963.github.io/JFleming963-Portfolio/) to load the app into the browser window.
+Visit [Employee Tracker App](https://jfleming963.github.io/Employee-Payroll-Tracker-App/) to load the app into the browser window.
 
 ## Usage
 
