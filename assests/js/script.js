@@ -12,7 +12,7 @@ const collectEmployees = function() {
   let lastName = prompt("Enter employee last name:");
   let salary = parseFloat(prompt("Enter employee salary:"));
   
-    if (firstName && lastName && !isNaN(salary)) { // Check for valid values
+    if (firstName && lastName && !isNaN(salary)) {
       const employee = {
         firstName: firstName,
         lastName: lastName,
