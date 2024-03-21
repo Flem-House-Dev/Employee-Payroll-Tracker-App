@@ -19,7 +19,6 @@ const collectEmployees = function() {
         salary: salary
       };
 
-      // Push the employee object to the employees array
       employees.push(employee);
     } else {
       alert("Please enter valid information for all fields.");
